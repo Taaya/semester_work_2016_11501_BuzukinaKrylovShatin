@@ -1,0 +1,23 @@
+/*.form-group {
+    display: inline;
+}*/
+.firstBlock {
+    margin-top: 100px;
+}
+#team-list {
+    list-style-type: none;
+    padding: 0; /* Убираем поля */
+    margin-left: 0px; /* Отступ слева */
+}
+
+.footer {
+    color: white;
+    background-color: #222222;
+}
+#footer-border-hr  {
+    color: #ec971f;
+    background-color: #ec971f;
+    height: 2px;
+    border: none;
+    margin-top: 0;
+}
