@@ -1,9 +1,13 @@
-
+/*.form-group {
+    display: inline;
+}*/
 .firstBlock {
     margin-top: 100px;
 }
-.team-list {
+#team-list {
     list-style-type: none;
+    padding: 0; /* Убираем поля */
+    margin-left: 0px; /* Отступ слева */
 }
 
 .footer {
