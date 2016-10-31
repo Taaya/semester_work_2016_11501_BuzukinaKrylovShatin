@@ -1,6 +1,23 @@
 /*.form-group {
     display: inline;
 }*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: auto;
+    color: white;
+    background-color: #222222;
+}
 .firstBlock {
     margin-top: 100px;
 }
@@ -9,15 +26,17 @@
     padding: 0; /* Убираем поля */
     margin-left: 0px; /* Отступ слева */
 }
-
-.footer {
-    color: white;
-    background-color: #222222;
-}
 #footer-border-hr  {
     color: #ec971f;
     background-color: #ec971f;
     height: 2px;
     border: none;
     margin-top: 0;
+}
+.content {
+    margin-bottom: 200px;
+}
+#login_empty_alert, #password_empty_alert {
+    margin-top: 5px;
+    margin-bottom: 0;
 }
