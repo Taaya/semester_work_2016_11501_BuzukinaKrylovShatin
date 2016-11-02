@@ -1,9 +1,10 @@
-/*.form-group {
-    display: inline;
-}*/
+.form-group {
+    margin-bottom: 10px;
+}
 html {
     position: relative;
     min-height: 100%;
+    overflow-x: hidden;
 }
 body {
     /* Margin bottom by footer height */
@@ -34,9 +35,12 @@ body {
     margin-top: 0;
 }
 .content {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
-#login_empty_alert, #password_empty_alert {
+/*#login_empty_warning, #password_empty_warning {
     margin-top: 5px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
+}*/
+.header_with_bottom_margin {
+    margin-bottom: 30px;
 }

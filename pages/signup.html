@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="bootstrap.css?v=1" rel="stylesheet" type="text/css"/>
-    <link href="myStyle.css?v=11" rel="stylesheet" type="text/css"/>
+    <link href="bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="myStyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <!-- Fixed navbar -->
@@ -35,25 +35,53 @@
 
 <div class="firstBlock">
 
-
     <!--Content-->
-    <div class="row">
-        <h1 class="col-md-offset-4 col-md-4 header_with_bottom_margin" align="center">Вход</h1>
-    </div>
     <div class="content container">
+
+        <div class="row">
+            <h1 class="col-md-offset-4 col-md-4 header_with_bottom_margin" align="center">Регистрация</h1>
+        </div>
+
         <form class="form-horizontal" id="login_form" onsubmit="return checkform();">
             <div class="form-group">
-                <label for="input_login" class="col-md-offset-3 col-md-2 control-label">Логин</label>
+                <label for="input_login" class="col-md-offset-2 col-md-2 control-label">Логин</label>
 
                 <div class="col-md-2">
                     <input type="text" class="form-control" id="input_login" placeholder="Login">
                 </div>
+
+                <label class="col-md-1 control-label">Имя</label>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="Имя">
+                </div>
             </div>
+
             <div class="form-group">
-                <label for="input_password" class="col-md-offset-3 col-md-2 control-label">Пароль</label>
+                <label for="input_password" class="col-md-offset-2 col-md-2 control-label">Пароль</label>
 
                 <div class="col-md-2">
                     <input type="password" class="form-control" id="input_password" placeholder="Password">
+                </div>
+
+                <label class="col-md-1 control-label">Фамилия</label>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="Фамилия">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="input_password" class="col-md-offset-2 col-md-2 control-label">Повторите пароль</label>
+
+                <div class="col-md-2">
+                    <input type="password" class="form-control" id="input_repeated_password" placeholder="Password">
+                </div>
+
+                <label for="email_input" class="col-md-1 control-label">Email</label>
+
+                <div class="col-md-2">
+                    <input type="email" class="form-control" id="email_input" placeholder="Email">
                 </div>
             </div>
             <div class="form-group">
@@ -63,24 +91,22 @@
                             <input type="checkbox"> Запомнить меня
                         </label>
                     </div>
-                    <button type="submit" class="btn btn-success btn-block" id="login_button">Войти</button>
+                    <button type="submit" class="btn btn-success btn-block" id="signup_button">Зарегестрироваться
+                    </button>
                 </div>
             </div>
         </form>
-        <form class="form-horizontal" action="/semester_work_2016_11501_BuzukinaKrylovShatinGITHUB/pages/signup.html">
+        <form class="form-horizontal" action="/semester_work_2016_11501_BuzukinaKrylovShatinGITHUB/pages/login.html">
             <div class="form-group">
-                <label for="signup_button" class="col-md-offset-3 col-md-2 control-label" id="signup_label">Впервые у
-                    нас?</label>
-
-                <div class="col-md-2">
-                    <button class="btn btn-info btn-block" id="signup_button" type="submit">Регистрация</button>
+                <div class="col-md-offset-5 col-md-2">
+                    <button class="btn btn-info btn-block" id="login_button" type="submit">Уже есть аккаунт?</button>
                 </div>
             </div>
         </form>
-
     </div>
 
     <!--Footer-->
+
     <div class="footer">
         <hr id="footer-border-hr"/>
         <div class="row">
@@ -100,12 +126,13 @@
             </ul>
         </div>
     </div>
-
 </div>
 
+
 <!--Scripts-->
+
 <script src="js/jquery-3.1.1.js"></script>
 <script src="js/bootstrap.js"></script>
-<script src="js/enough_data_to_submit.js"></script>
+<script src="js/passwords_matcher.js"></script>
 </body>
 </html>
