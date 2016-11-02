@@ -1,7 +1,7 @@
 /**
  * Created by Олег on 02.11.2016.
  */
-$('#input_repeated_password').change(function() {
+$('#input_repeated_password').keyup(function() {
 
     var pass = $("#input_password").val();
     var pass_rep = $("#input_repeated_password").val();
