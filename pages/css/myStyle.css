@@ -84,22 +84,23 @@ body {
 }
 
 /*circled images*/
-.round_icon img {
-    float: left;
-    margin: 0 auto;
-    max-width: 100px;
-    max-height: 100px;
+.round_icon {
+    width: 100px;
+    height: 100px;
     -webkit-border-radius: 50% !important;
     -moz-border-radius: 50% !important;
     border-radius: 50% !important;
+
 }
+
+
 /*tiles*/
 .tile {
     width: 100%;
     display: inline-block;
     box-sizing: border-box;
     background: #fff;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
 }
@@ -134,7 +135,7 @@ body {
 }
 
 
-.blue {   background: #2672EC;}
+.blue {   background: #75c1ec;}
 
 .blue:hover {
     background: darken(#2672EC, 10%);
