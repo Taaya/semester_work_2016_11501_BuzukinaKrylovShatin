@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/selectButtons.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#about">Главная</a></li>
+                <li><a href="#contact">Курсы</a></li>
+                <li><a href="#">Экзамены</a></li>
+                <li><a href="#about">Личный кабинет</a></li>
+                <li><a href="#contact">Выход</a></li>
+                <li><a href="#contact">Обратная связь</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right navbar-header">
+                <li><a href="#">Войти</a></li>
+                <li>
+                    <div class="navbar-brand" href="#">Russo turisto</div>
+                    <img style="max-height:45px; margin-top: 5px;"
+                         src="logo.jpg" class="img-responsive"/>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+
+
+    </div>
+</div>
+
+<div class="firstBlock">
+
+    <!--Content-->
+    <div class="content">
+        <div class="h1 col-md-2 col-md-offset-1 navbar-left nav">
+            <div class="row">
+                <div id="imaginary_container" class="col-md-12 margin_minimal">
+                    <div class="input-group stylish-input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon">
+                        <button type="submit"><span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                    </div>
+                </div>
+                <div class="col-md-12 margin_minimal">
+                    <a class="btn btn-primary btn-select" id="language_selector">
+                        <input type="hidden" class="btn-select-input" id="" name="" value=""/>
+                        <span class="btn-select-value">Язык</span>
+                        <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+                        <ul>
+                            <li>Английский</li>
+                            <li>Испанский</li>
+                            <li>Немецкий</li>
+                            <li>Татарский</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="col-md-12 margin_minimal">
+                    <a class="btn btn-primary btn-select" id="level_selector">
+                        <input type="hidden" class="btn-select-input" id="" name="" value=""/>
+                        <span class="btn-select-value">Уровень</span>
+                        <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="row">
+                <div class="bootstrap snippet">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Курсы</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tile purple">
+                                <h3 class="title">Purple Tile</h3>
+
+                                <p>Hello Purple, this is a colored tile.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tile red">
+                                <h3 class="title">Red Tile</h3>
+
+                                <p>Hello Red, this is a colored tile.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tile purple">
+                                <h3 class="title">Purple Tile</h3>
+
+                                <p>Hello Purple, this is a colored tile.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tile red">
+                                <h3 class="title">Red Tile</h3>
+
+                                <p>Hello Red, this is a colored tile.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tile green">
+                                <h3 class="title">Green Tile</h3>
+
+                                <p>Hello Green, this is a colored tile.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tile blue">
+                                <h3 class="title">Blue Tile</h3>
+
+                                <p>Hello Blue, this is a colored tile.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 container" align="center">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#">«</a></li>
+                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--Footer-->
+
+    <div class="footer">
+        <hr id="footer-border-hr"/>
+        <div class="row">
+        </div>
+        <div class="col-md-3 col-md-offset-2">
+            <h4>Языковая школа "RussoTuristo"</h4>
+
+            <p>Посетите <a href="https://github.com/Taaya/semester_work_2016_11501_BuzukinaKrylovShatin">репозиторий
+                проекта на GitHub</a></p>
+        </div>
+        <div class="col-md-3 col-md-offset-2">
+            <h4>Команда проекта</h4>
+            <ul id="team-list">
+                <li>Бузукина Тая</li>
+                <li>Крылов Антон</li>
+                <li>Шатин Олег</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Scripts-->
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/selectButtons.js"></script>
+
+</body>
+</html>
