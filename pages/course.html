@@ -8,12 +8,12 @@
 </head>
 <body>
 <!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+<div class="navbar navbar-default navbar-fixed-top  navbar-inverse" role="navigation">
     <div class="container">
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#about">Главная</a></li>
-                <li><a href="#contact">Курсы</a></li>
+                <li><a href="#about">Главная</a></li>
+                <li class="active"><a href="#contact">Курсы</a></li>
                 <li><a href="#">Экзамены</a></li>
                 <li><a href="#about">Личный кабинет</a></li>
                 <li><a href="#contact">Выход</a></li>
@@ -32,12 +32,49 @@
 
     </div>
 </div>
+<!--No offset content: back to courses list button-->
+<div class="row no_top_offset_first_block">
+    <div class="col-md-12">
+        <button class="btn btn-warning btn-block"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Ко
+            всем курсам
+        </button>
+    </div>
+</div>
 
 <div class="firstBlock">
 
     <!--Content-->
     <div class="content">
+        <div class="row">
+            <!--pic and lang and level-->
+            <div class="col-md-offset-2 col-md-3" align="center">
+                <!--pic-->
 
+                <img src="300x300.jpg" class="img-circle img-responsive"/>
+
+
+            </div>
+            <!--title and description and lang and lvl labels-->
+            <div class="col-md-5">
+                <!--lang and lvl-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Название курса</h1>
+                        <hr/>
+                        <p>Описание курса. Some default panel content here. Nulla vitae elit libero,
+                            a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+                            Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies
+                            vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+                            Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies
+                            vehicula ut id elit</p>
+                        <h3>
+                            <span class="label label-warning">Английский</span>
+                            <span class="label label-warning">Уровень 2</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--Footer-->

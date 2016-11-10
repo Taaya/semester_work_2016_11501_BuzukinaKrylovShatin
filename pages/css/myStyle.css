@@ -22,10 +22,24 @@ body {
     color: white;
     background-color: #222222;
 }
-
+/*
+*About content-block
+*/
 .firstBlock {
     margin-top: 100px;
 }
+
+.content {
+    margin-bottom: 150px;
+    overflow: hidden;
+}
+.no_top_offset_first_block {
+    margin-top: 50px;
+}
+/*
+*end
+*/
+
 
 #team-list {
     list-style-type: none;
@@ -39,11 +53,6 @@ body {
     height: 2px;
     border: none;
     margin-top: 0;
-}
-
-.content {
-    margin-bottom: 150px;
-    overflow: hidden;
 }
 
 /*#login_empty_warning, #password_empty_warning {
@@ -76,6 +85,9 @@ body {
 .margin_minimal {
     margin: 5px;
 }
+.no_margin {
+    margin: 0px;
+}
 
 /*pagination styles*/
 .pagination > li > a, .pagination > li > span {
@@ -84,13 +96,19 @@ body {
 }
 
 /*circled images*/
-.round_icon {
-    width: 100px;
-    height: 100px;
+.round_icon_small, .round_icon_big {
     -webkit-border-radius: 50% !important;
     -moz-border-radius: 50% !important;
     border-radius: 50% !important;
 
+}
+.round_icon_small {
+    width: 100px;
+    height: 100px;
+}
+.round_icon_big {
+    width: 200px;
+    height: 200px;
 }
 
 
@@ -141,8 +159,8 @@ body {
     background: darken(#2672EC, 10%);
 }
 
-.orange {  background: #DC572E;}
+.orange {  background: #f0ad4e;}
 
 .orange:hover {
-    background: darken(#DC572E, 10%);
+    background: darken(#f0ad4e, 10%);
 }
