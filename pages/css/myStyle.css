@@ -88,7 +88,18 @@ body {
 .no_margin {
     margin: 0px;
 }
-
+.mono_width_text {
+    font-family: ‘Courier New’, Monaco, Consolas,  monospace;
+}
+.valign {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
 /*pagination styles*/
 .pagination > li > a, .pagination > li > span {
     border-radius: 50% !important;

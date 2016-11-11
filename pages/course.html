@@ -47,13 +47,10 @@
     <!--Content-->
     <div class="content">
         <div class="row">
-            <!--pic and lang and level-->
+            <!--pic-->
             <div class="col-md-offset-2 col-md-3" align="center">
                 <!--pic-->
-
                 <img src="300x300.jpg" class="img-circle img-responsive"/>
-
-
             </div>
             <!--title and description and lang and lvl labels-->
             <div class="col-md-5">
@@ -73,18 +70,198 @@
                 </h3>
             </div>
         </div>
+
+        <!--Groups list-->
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
+                <hr/>
                 <h3>Доступные группы</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <div class="row" align="center">
+                            <div class="col-xs-1 small">Группа</div>
+                            <div class="col-xs-3 small">Преподаватель</div>
+                            <div class="col-xs-3 small">Расписание</div>
+                            <div class="col-xs-2 small">Первое занятие</div>
+                            <div class="col-xs-2 small">Осталось мест</div>
+                        </div>
+                    </div>
+                    <!--WARNING!!!! comments below are very IMPORTANT!! DO NOT REMOVE THEM!!
+                    THEY MUST BE LIKE
+                        ...
+                        </div><!-- comment
+                         --/><div class= "col-xs-# valign">
+                        ...
+                    ITS A MAGIC, DO NOT TOUCH IT-->
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="row" align="center">
+                                <!--group num-->
+                                <div class="col-xs-1 valign">
+                                    <label>1</label>
+                                </div><!--teacher pic
+                                --><div class="col-xs-1 valign" >
+                                    <img src="300x300.jpg" class="img-circle img-responsive"/>
+                                </div><!--
+                                teacher
+                                --><div class="col-xs-2 valign" align="left">
+                                    <label>Альбус Дамблдор</label>
+                                </div><!--
+                                timetable
+                                --><div class="col-xs-3 valign">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ПН 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">ВТ 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">СР 19:00-20:00</span>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ЧТ 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">ПТ 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">СБ 08:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">ВС 20:00-21:00</span>
+                                        </div>
+                                    </div>
+                                </div><!--first lesson
+                                --><div class="col-xs-2 valign">
+                                    <label>21.10.2016 в 19.30</label>
+                                </div><!--free places
+                                --><div class="col-xs-2 valign">
+                                    <label>4/20</label>
+                                </div><!--join us
+                                --><div class="col-xs-1 valign">
+                                    <button class="btn btn-block btn-success"><span class="glyphicon glyphicon-plus"
+                                                                                               aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row" align="center">
+                                    <!--group num-->
+                                    <div class="col-xs-1 valign">
+                                        <label>1</label>
+                                    </div><!--teacher pic
+                                    --><div class="col-xs-1 valign" >
+                                    <img src="300x300.jpg" class="img-circle img-responsive"/>
+                                </div><!--
+                                    teacher
+                                    --><div class="col-xs-2 valign" align="left">
+                                    <label>Мерлин Мэнсон</label>
+                                </div><!--
+                                    timetable
+                                    --><div class="col-xs-3 valign">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ПН 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">ВТ 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">СР 19:00-20:00</span>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ЧТ 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">ПТ 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">СБ 08:00-20:00</span>
+                                        </div>
+                                    </div>
+                                </div><!--first lesson
+                                    --><div class="col-xs-2 valign">
+                                    <label>21.10.2016 в 19.30</label>
+                                </div><!--free places
+                                    --><div class="col-xs-2 valign">
+                                    <label>4/20</label>
+                                </div><!--join us
+                                    --><div class="col-xs-1 valign">
+                                    <button class="btn btn-block btn-success"><span class="glyphicon glyphicon-plus"
+                                                                                    aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row" align="center">
+                                    <!--group num-->
+                                    <div class="col-xs-1 valign">
+                                        <label>1</label>
+                                    </div><!--teacher pic
+                                    --><div class="col-xs-1 valign">
+                                    <img src="300x300.jpg" class="img-circle img-responsive"/>
+                                </div><!--
+                                    teacher
+                                    --><div class="col-xs-2 valign" align="left">
+                                    <label>Алиса Селезнева</label>
+                                </div><!--
+                                    timetable
+                                    --><div class="col-xs-3 valign">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ПН 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">СР 19:00-20:00</span>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ЧТ 19:00-20:00</span>
+                                        </div>
+                                    </div>
+                                </div><!--first lesson
+                                    --><div class="col-xs-2 valign">
+                                    <label>21.10.2016 в 19.30</label>
+                                </div><!--free places
+                                    --><div class="col-xs-2 valign">
+                                    <label>4/20</label>
+                                </div><!--join us
+                                    --><div class="col-xs-1 valign">
+                                    <button class="btn btn-block btn-success"><span class="glyphicon glyphicon-plus"
+                                                                                    aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row" align="center">
+                                <!--group num-->
+                                <div class="col-xs-1 valign">
+                                    <label>1</label>
+                                </div><!--teacher pic
+                                    --><div class="col-xs-1 valign">
+                                <img src="300x300.jpg" class="img-circle img-responsive"/>
+                            </div><!--
+                                    teacher
+                                    --><div class="col-xs-2 valign" align="left">
+                                <label>Александр Лукашенко</label>
+                            </div><!--
+                                    timetable
+                                    --><div class="col-xs-3 valign">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <span class="label label-danger mono_width_text">ПН 19:00-20:00</span>
+                                        <span class="label label-danger mono_width_text">СР 19:00-20:00</span>
+                                    </div>
+                                    <div class="col-xs-6">
+
+                                    </div>
+                                </div>
+                            </div><!--first lesson
+                                    --><div class="col-xs-2 valign">
+                                <label>21.10.2016 в 19.30</label>
+                            </div><!--free places
+                                    --><div class="col-xs-2 valign">
+                                <label>4/20</label>
+                            </div><!--join us
+                                    --><div class="col-xs-1 valign">
+                                <button class="btn btn-block btn-success"><span class="glyphicon glyphicon-plus"
+                                                                                aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
             </div>
         </div>
+        <!--Groups list end-->
+
     </div>
 
     <!--Footer-->
