@@ -96,10 +96,6 @@ body {
     vertical-align: middle;
     float: none;
 }
-.vertical-align {
-    display: flex;
-    align-items: center;
-}
 /*pagination styles*/
 .pagination > li > a, .pagination > li > span {
     border-radius: 50% !important;
