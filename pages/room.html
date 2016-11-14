@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top  navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#about">Главная</a></li>
+                <li><a href="#contact">Курсы</a></li>
+                <li><a href="#">Экзамены</a></li>
+                <li class="active"><a href="#about">Личный кабинет</a></li>
+                <li><a href="#contact">Выход</a></li>
+                <li><a href="#contact">Обратная связь</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right navbar-header">
+                <li><a href="#">Войти</a></li>
+                <li>
+                    <div class="navbar-brand" href="#">Russo turisto</div>
+                    <img style="max-height:45px; margin-top: 5px;"
+                         src="logo.jpg" class="img-responsive"/>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+
+
+    </div>
+</div>
+<!--No offset content: back to exams list button-->
+<div class="row no_top_offset_first_block">
+    <div class="col-md-12">
+        <button class="btn btn-warning btn-block">Редактировать информацию о себе <span class="glyphicon glyphicon-pencil"
+                                                                                          aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+
+<div class="firstBlock">
+
+    <!--Content-->
+    <div class="content">
+        <div class="row">
+            <!--about user-->
+            <div class="col-md-8 col-md-offset-2">
+                <h1>Вася Пупкин</h1>
+                <!--login & email-->
+                <h3>
+                    <span class="label label-warning">vasya_superkrut</span>
+                    <span class="label label-warning">vasya@mail.ru</span>
+                </h3>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <!--Courses list-->
+            <div class="col-md-offset-2 col-md-4">
+                <h3>Мои курсы</h3>
+                <hr/>
+
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-7 small">Курс</div>
+                            <div class="col-xs-5 small">Следующее занятие</div>
+                        </div>
+                    </div>
+                    <!--WARNING!!!! comments below are very IMPORTANT!! DO NOT REMOVE THEM!!
+                    THEY MUST BE LIKE
+                        ...
+                        </div><!-- comment
+                         --/><div class= "col-xs-# valign">
+                        ...
+                    ITS A MAGIC, DO NOT TOUCH IT-->
+                    <ul class="list-group">
+
+                        <!--MyCourse and Modal item-->
+                        <li class="list-group-item">
+                            <div class="row">
+                                <!--about course
+                                --><div class="col-xs-7 valign">
+                                <!-- panel trigger modal: data target = "#course_modal_id" -->
+                                    <div class="panel panel-default no_margin" data-toggle="modal" data-target="#course_modal_1">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <h4 class="title">Название курса</h4>
+                                                    <h4 class="no_margin">
+                                                        <span class="label label-warning">Английский</span>
+                                                        <span class="label label-warning">Уровень 2</span>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--next lessonn
+                                --><div class="col-xs-5 valign">
+                                    <label>21.10.2016 в 19.30</label>
+                                </div>
+                            </div>
+                            <!-- Modal: trigger by id = course_modal_# -->
+                            <div class="modal fade" id="course_modal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title">О курсе</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <h4 class="title">Название курса</h4>
+                                                    <h4 class="no_margin">
+                                                        <span class="label label-warning">Английский</span>
+                                                        <span class="label label-warning">Уровень 2</span>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <button class="btn btn-block btn-primary">Группа 11-501: чат</button>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <h6>Расписание</h6>
+                                                    <span class="label label-danger mono_width_text">ПН 19:00-20:00</span>
+                                                    <span class="label label-danger mono_width_text">ВТ 19:00-20:00</span>
+                                                    <span class="label label-danger mono_width_text">СР 19:00-20:00</span>
+
+                                                </div>
+                                                <div class="col-xs-9">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <h6>Преподаватель:</h6>
+                                                            <label>Альбус Дамблдор</label>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <h6>Следующее занятие:</h6>
+                                                            <label>15.11.2016 в 18:40</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <!--remove not used buttons-->
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-default">Кнопка на всякий</button>
+                                            <button type="button" class="btn btn-danger">Отказаться от прохождения курса</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--MyCourse and Modal item-->
+                        <li class="list-group-item">
+                            <div class="row">
+                                <!--about course
+                                --><div class="col-xs-7 valign">
+                                <!-- panel trigger modal: data target = "#course_modal_id" -->
+                                <div class="panel panel-default no_margin" data-toggle="modal" data-target="#course_modal_2">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h4 class="title">Название курса2</h4>
+                                                <h4 class="no_margin">
+                                                    <span class="label label-warning">Английский</span>
+                                                    <span class="label label-warning">Уровень 2</span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--next lessonn
+                                --><div class="col-xs-5 valign">
+                                <label>21.10.2016 в 19.30</label>
+                            </div>
+                            </div>
+                            <!-- Modal: trigger by id = course_modal_# -->
+                            <div class="modal fade" id="course_modal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title">О курсе</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <h4 class="title">Название курса2</h4>
+                                                    <h4 class="no_margin">
+                                                        <span class="label label-warning">Английский</span>
+                                                        <span class="label label-warning">Уровень 2</span>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <button class="btn btn-block btn-primary">Группа 11-501: чат</button>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <h6>Расписание</h6>
+                                                    <span class="label label-danger mono_width_text">ПН 19:00-20:00</span>
+                                                    <span class="label label-danger mono_width_text">ВТ 19:00-20:00</span>
+                                                    <span class="label label-danger mono_width_text">СР 19:00-20:00</span>
+
+                                                </div>
+                                                <div class="col-xs-9">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <h6>Преподаватель:</h6>
+                                                            <label>Альбус Дамблдор</label>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <h6>Следующее занятие:</h6>
+                                                            <label>15.11.2016 в 18:40</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <!--remove not used buttons-->
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-default">Кнопка на всякий</button>
+                                            <button type="button" class="btn btn-danger">Отказаться от прохождения курса</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--end of items-->
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <!--My Exams-->
+            <div class="col-md-4">
+                <h3>Мои экзамены</h3>
+                <hr/>
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-7 small">Экзамен</div>
+                            <div class="col-xs-5 small">Дата экзамена</div>
+                        </div>
+                    </div>
+                    <!--course panels-->
+                    <ul class="list-group">
+
+                        <!--My exam item-->
+                        <li class="list-group-item">
+                            <div class="row">
+                                <!--about course
+                                --><div class="col-xs-7 valign">
+                                <!-- panel trigger modal: data target = "#course_modal_id" -->
+                                <div class="panel panel-default no_margin">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h4 class="title">Название экзамена</h4>
+                                                <h4 class="no_margin">
+                                                    <span class="label label-warning">Английский</span>
+                                                    <span class="label label-warning">Уровень 2</span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--next lessonn
+                                    --><div class="col-xs-5 valign">
+                                <label>21.10.2016 в 19.30</label>
+                            </div>
+                            </div>
+                        </li>
+
+                        <!--My exam item-->
+                        <li class="list-group-item">
+                            <div class="row">
+                                <!--about course
+                                --><div class="col-xs-7 valign">
+                                <!-- panel trigger modal: data target = "#course_modal_id" -->
+                                <div class="panel panel-default no_margin">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h4 class="title">Название экзамена2</h4>
+                                                <h4 class="no_margin">
+                                                    <span class="label label-warning">Английский</span>
+                                                    <span class="label label-warning">Уровень 3</span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--next lessonn
+                                    --><div class="col-xs-5 valign">
+                                <label>21.10.2016 в 19.30</label>
+                            </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Groups list end-->
+
+    </div>
+
+    <!--Footer-->
+
+    <div class="footer">
+        <hr id="footer-border-hr"/>
+        <div class="row">
+        </div>
+        <div class="col-md-3 col-md-offset-2">
+            <h4>Языковая школа "RussoTuristo"</h4>
+
+            <p>Посетите <a href="https://github.com/Taaya/semester_work_2016_11501_BuzukinaKrylovShatin">репозиторий
+                проекта на GitHub</a></p>
+        </div>
+        <div class="col-md-3 col-md-offset-2">
+            <h4>Команда проекта</h4>
+            <ul id="team-list">
+                <li>Бузукина Тая</li>
+                <li>Крылов Антон</li>
+                <li>Шатин Олег</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Scripts-->
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
