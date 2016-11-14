@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top  navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#about">Главная</a></li>
+                <li><a href="#contact">Курсы</a></li>
+                <li class="active"><a href="#">Экзамены</a></li>
+                <li><a href="#about">Личный кабинет</a></li>
+                <li><a href="#contact">Выход</a></li>
+                <li><a href="#contact">Обратная связь</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right navbar-header">
+                <li><a href="#">Войти</a></li>
+                <li>
+                    <div class="navbar-brand" href="#">Russo turisto</div>
+                    <img style="max-height:45px; margin-top: 5px;"
+                         src="logo.jpg" class="img-responsive"/>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+
+
+    </div>
+</div>
+<!--No offset content: back to exams list button-->
+<div class="row no_top_offset_first_block">
+    <div class="col-md-12">
+        <button class="btn btn-warning btn-block"><span class="glyphicon glyphicon-chevron-left"
+                                                        aria-hidden="true"></span>Ко
+            всем экзаменам
+        </button>
+    </div>
+</div>
+
+<div class="firstBlock">
+
+    <!--Content-->
+    <div class="content">
+        <div class="row">
+            <!--title and description and lang and lvl labels-->
+            <div class="col-md-8 col-md-offset-2">
+                <!--lang and lvl-->
+                <h1>Название экзамена</h1>
+                <hr/>
+                <p>Описание экзамена. Some default panel content here. Nulla vitae elit libero,
+                    a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+                    Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies
+                    vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+                    Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies
+                    vehicula ut id elit</p>
+
+                <h3>
+                    <span class="label label-warning">Английский</span>
+                    <span class="label label-warning">Уровень 2</span>
+                </h3>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <!--Groups list-->
+            <div class="col-md-offset-2 col-md-4">
+                <h3>Даты проведения экзамена</h3>
+                <hr/>
+
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <div class="row" align="center">
+                            <div class="col-xs-5 small">Дата</div>
+                            <div class="col-xs-5 small">Свободно мест</div>
+                            <div class="col-xs-2"></div>
+                        </div>
+                    </div>
+                    <!--WARNING!!!! comments below are very IMPORTANT!! DO NOT REMOVE THEM!!
+                    THEY MUST BE LIKE
+                        ...
+                        </div><!-- comment
+                         --/><div class= "col-xs-# valign">
+                        ...
+                    ITS A MAGIC, DO NOT TOUCH IT-->
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="row" align="center">
+                                <!--first lesson
+                                --><div class="col-xs-5 valign">
+                                    <label>21.10.2016 в 19.30</label>
+                                </div><!--free places
+                                --><div class="col-xs-5 valign">
+                                    <label>4/20</label>
+                                </div><!--join us
+                                --><div class="col-xs-2 valign">
+                                    <button class="btn btn-block btn-success"><span class="glyphicon glyphicon-plus"
+                                                                                    aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row" align="center">
+                                <!--first lesson
+                                --><div class="col-xs-5 valign">
+                                <label>25.10.2016 в 19.30</label>
+                            </div><!--free places
+                                --><div class="col-xs-5 valign">
+                                <label>4/20</label>
+                            </div><!--join us
+                                --><div class="col-xs-2 valign">
+                                <button class="btn btn-block btn-success"><span class="glyphicon glyphicon-plus"
+                                                                                aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row" align="center">
+                                <!--first lesson
+                                --><div class="col-xs-5 valign">
+                                <label>21.11.2016 в 19.30</label>
+                            </div><!--free places
+                                --><div class="col-xs-5 valign">
+                                <label>8/20</label>
+                            </div><!--join us
+                                --><div class="col-xs-2 valign">
+                                <button class="btn btn-block btn-success"><span class="glyphicon glyphicon-plus"
+                                                                                aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!--Courses for preparing-->
+            <div class="col-md-4">
+                <h3>Рекомендуемые курсы для подготовки</h3>
+                <hr/>
+                <!--course panels-->
+                <div class="panel panel-default">
+                    <div class="row panel-body">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3 class="title">Название курса</h3>
+
+                                    <p>Описание курса описание курса описание курса описание курса описание
+                                        курса Nulla vitae elit libero,
+                                        a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+                                        Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies
+                                        vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.</p>
+                                    <h4 class="no_margin">
+                                        <span class="label label-warning">Английский</span>
+                                        <span class="label label-warning">Уровень 2</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--panel-->
+                <div class="panel panel-default">
+                    <div class="row panel-body">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3 class="title">Название курса</h3>
+
+                                    <p>Описание курса описание курса описание курса описание курса описание
+                                        курса Nulla vitae elit libero,
+                                        a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+                                        Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies
+                                        vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.</p>
+                                    <h4 class="no_margin">
+                                        <span class="label label-warning">Английский</span>
+                                        <span class="label label-warning">Уровень 2</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--panel-->
+                <div class="panel panel-default">
+                    <div class="row panel-body">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3 class="title">Название курса</h3>
+
+                                    <p>Описание курса описание курса описание курса описание курса описание
+                                        курса Nulla vitae elit libero,
+                                        a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+                                        Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies
+                                        vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.</p>
+                                    <h4 class="no_margin">
+                                        <span class="label label-warning">Английский</span>
+                                        <span class="label label-warning">Уровень 2</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Groups list end-->
+
+    </div>
+
+    <!--Footer-->
+
+    <div class="footer">
+        <hr id="footer-border-hr"/>
+        <div class="row">
+        </div>
+        <div class="col-md-3 col-md-offset-2">
+            <h4>Языковая школа "RussoTuristo"</h4>
+
+            <p>Посетите <a href="https://github.com/Taaya/semester_work_2016_11501_BuzukinaKrylovShatin">репозиторий
+                проекта на GitHub</a></p>
+        </div>
+        <div class="col-md-3 col-md-offset-2">
+            <h4>Команда проекта</h4>
+            <ul id="team-list">
+                <li>Бузукина Тая</li>
+                <li>Крылов Антон</li>
+                <li>Шатин Олег</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Scripts-->
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
