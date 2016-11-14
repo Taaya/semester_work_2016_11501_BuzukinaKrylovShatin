@@ -1,0 +1,183 @@
+.form-group {
+    margin-bottom: 10px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: auto;
+    color: white;
+    background-color: #222222;
+}
+/*
+*About content-block
+*/
+.firstBlock {
+    margin-top: 100px;
+}
+
+.content {
+    margin-bottom: 150px;
+    overflow: hidden;
+}
+.no_top_offset_first_block {
+    margin-top: 50px;
+}
+/*
+*end
+*/
+
+
+#team-list {
+    list-style-type: none;
+    padding: 0; /* Убираем поля */
+    margin-left: 0px; /* Отступ слева */
+}
+
+#footer-border-hr {
+    color: #ec971f;
+    background-color: #ec971f;
+    height: 2px;
+    border: none;
+    margin-top: 0;
+}
+
+/*#login_empty_warning, #password_empty_warning {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}*/
+.header_with_bottom_margin {
+    margin-bottom: 30px;
+}
+
+/*search form styles
+#imaginary_container{
+    margin: 5px;
+}*/
+.stylish-input-group .input-group-addon {
+    background: white !important;
+}
+
+.stylish-input-group .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-color: #ccc;
+}
+
+.stylish-input-group button {
+    border: 0;
+    background: transparent;
+}
+
+.margin_minimal {
+    margin: 5px;
+}
+.no_margin {
+    margin: 0px;
+}
+.mono_width_text {
+    font-family: ‘Courier New’, Monaco, Consolas,  monospace;
+}
+.valign {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+/*pagination styles*/
+.pagination > li > a, .pagination > li > span {
+    border-radius: 50% !important;
+    margin: 0 5px;
+}
+
+/*circled images*/
+.round_icon_small, .round_icon_big {
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+
+}
+.round_icon_small {
+    width: 100px;
+    height: 100px;
+}
+.round_icon_big {
+    width: 200px;
+    height: 200px;
+}
+
+
+/*tiles*/
+.tile {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.title {
+    margin-top: 0px;
+}
+
+.purple, .blue, .red, .orange, .green {
+    color: #fff;
+}
+
+.purple {
+    background: #5133AB;
+}
+
+.purple:hover {
+    background: darken(#5133AB, 10%);
+}
+
+.red { background: #AC193D;}
+
+.red:hover {
+    background: darken(#AC193D, 10%);
+}
+
+
+.green {background: #00A600;}
+
+.green:hover {
+    background: darken(#00A600, 10%);
+}
+
+
+.blue {   background: #75c1ec;}
+
+.blue:hover {
+    background: darken(#2672EC, 10%);
+}
+
+.orange {  background: #f0ad4e;}
+
+.orange:hover {
+    background: darken(#f0ad4e, 10%);
+}
+.col-xs-12{
+    height: 145px;
+}
+.small-row{
+    height: 65px;
+}
