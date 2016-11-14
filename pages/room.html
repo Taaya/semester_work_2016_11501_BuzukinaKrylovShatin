@@ -35,12 +35,69 @@
 <!--No offset content: back to exams list button-->
 <div class="row no_top_offset_first_block">
     <div class="col-md-12">
-        <button class="btn btn-warning btn-block">Редактировать информацию о себе <span class="glyphicon glyphicon-pencil"
+        <button class="btn btn-warning btn-block" data-toggle="modal" data-target="#change_info_about_user_modal">Редактировать информацию о себе <span class="glyphicon glyphicon-pencil"
                                                                                           aria-hidden="true"></span>
         </button>
     </div>
 </div>
-
+<!--Modal for change info about user-->
+<div class="modal fade" id="change_info_about_user_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <form method="post" class="form-horizontal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Редактирование информации о себе</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2">
+                                    <label for="input_login" class="control-label">Логин</label>
+                            </div>
+                            <div class="col-xs-6">
+                                 <input type="text" class="form-control" id="input_login" placeholder="vasya_superkrut">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2">
+                                <label for="input_login" class="control-label">Email</label>
+                            </div>
+                            <div class="col-xs-6">
+                                <input type="text" class="form-control" id="input_email" placeholder="vasya@mail.ru">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2">
+                                <label for="input_login" class="control-label">Имя</label>
+                            </div>
+                            <div class="col-xs-6">
+                                <input type="text" class="form-control" id="input_name" placeholder="Вася">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2">
+                                <label for="input_login" class="control-label">Фамилия</label>
+                            </div>
+                            <div class="col-xs-6">
+                                <input type="text" class="form-control" id="input_surname" placeholder="Пупкин">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Сохранить и отправить</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
 <div class="firstBlock">
 
     <!--Content-->
