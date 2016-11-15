@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top  navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#about">Главная</a></li>
+                <li class="active"><a href="#contact">Курсы</a></li>
+                <li><a href="#">Экзамены</a></li>
+                <li><a href="#about">Личный кабинет</a></li>
+                <li><a href="#contact">Выход</a></li>
+                <li><a href="#contact">Обратная связь</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right navbar-header">
+                <li><a href="#">Войти</a></li>
+                <li>
+                    <div class="navbar-brand" href="#">Russo turisto</div>
+                    <img style="max-height:45px; margin-top: 5px;"
+                         src="logo.jpg" class="img-responsive"/>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+
+
+    </div>
+</div>
+<!--No offset content: back to courses list button-->
+<div class="row no_top_offset_first_block">
+    <div class="col-md-12">
+        <button class="btn btn-warning btn-block"><span class="glyphicon glyphicon-chevron-left"
+                                                        aria-hidden="true"></span>Ко
+            всем курсам
+        </button>
+    </div>
+</div>
+
+<div class="firstBlock">
+
+    <!--Content-->
+    <div class="content">
+        <div class="row">
+            <!--title and description and lang and lvl labels-->
+            <div class="col-md-8 col-md-offset-2">
+                <!--lang and lvl-->
+                <h1>Название курса</h1>
+                <hr/>
+                <p>Описание курса. Some default panel content here. Nulla vitae elit libero,
+                    a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+                    Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies
+                    vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+                    Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies
+                    vehicula ut id elit</p>
+
+                <h3>
+                    <span class="label label-warning">Английский</span>
+                    <span class="label label-warning">Уровень 2</span>
+                </h3>
+            </div>
+        </div>
+
+        <!--Groups list-->
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <hr/>
+                <h3>Доступные группы</h3>
+
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <div class="row" align="center">
+                            <div class="col-xs-1 small">Группа</div>
+                            <div class="col-xs-3 small">Преподаватель</div>
+                            <div class="col-xs-3 small">Расписание</div>
+                            <div class="col-xs-3 small">Первое занятие</div>
+                            <div class="col-xs-1 small">
+                                <div style="white-space: nowrap; margin-left: -50%;">Осталось мест</div>
+                            </div>
+                            <div class="col-xs-1"></div>
+                        </div>
+                    </div>
+                    <!--WARNING!!!! comments below are very IMPORTANT!! DO NOT REMOVE THEM!!
+                    THEY MUST BE LIKE
+                        ...
+                        </div><!-- comment
+                         --/><div class= "col-xs-# valign">
+                        ...
+                    ITS A MAGIC, DO NOT TOUCH IT-->
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="row" align="center">
+                                <!--group num-->
+                                <div class="col-xs-1 valign">
+                                    <label>1</label>
+                                </div><!--
+                                teacher
+                                --><div class="col-xs-3 valign">
+                                    <label>Альбус Дамблдор</label>
+                                </div><!--
+                                timetable
+                                --><div class="col-xs-3 valign">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ПН 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">ВТ 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">СР 19:00-20:00</span>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ЧТ 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">ПТ 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">СБ 08:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">ВС 20:00-21:00</span>
+                                        </div>
+                                    </div>
+                                </div><!--first lesson
+                                --><div class="col-xs-3 valign">
+                                    <label>21.10.2016 в 19.30</label>
+                                </div><!--free places
+                                --><div class="col-xs-1 valign">
+                                    <label>4/20</label>
+                                </div><!--join us
+                                --><div class="col-xs-1 valign">
+                                    <button class="btn btn-block btn-success"><span class="glyphicon glyphicon-plus"
+                                                                                    aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row" align="center">
+                                <!--group num-->
+                                <div class="col-xs-1 valign">
+                                    <label>1</label>
+                                </div><!--
+                                    teacher
+                                    --><div class="col-xs-3 valign">
+                                    <label>Мерлин Мэнсон</label>
+                                </div><!--
+                                    timetable
+                                    --><div class="col-xs-3 valign">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ПН 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">ВТ 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">СР 19:00-20:00</span>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ЧТ 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">ПТ 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">СБ 08:00-20:00</span>
+                                        </div>
+                                    </div>
+                                </div><!--first lesson
+                                    --><div class="col-xs-3 valign">
+                                    <label>21.10.2016 в 19.30</label>
+                                </div><!--free places
+                                    --><div class="col-xs-1 valign">
+                                    <label>4/20</label>
+                                </div><!--join us
+                                    --><div class="col-xs-1 valign">
+                                    <button class="btn btn-block btn-success"><span class="glyphicon glyphicon-plus"
+                                                                                    aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row" align="center">
+                                <!--group num--><div class="col-xs-1 valign">
+                                    <label>1</label>
+                                </div><!--
+                                    teacher
+                                    --><div class="col-xs-3 valign">
+                                    <label>Алиса Селезнева</label>
+                                </div><!--
+                                    timetable
+                                    --><div class="col-xs-3 valign">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ПН 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">СР 19:00-20:00</span>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ЧТ 19:00-20:00</span>
+                                        </div>
+                                    </div>
+                                </div><!--first lesson
+                                    --><div class="col-xs-3 valign">
+                                    <label>21.10.2016 в 19.30</label>
+                                </div><!--free places
+                                    --><div class="col-xs-1 valign">
+                                    <label>4/20</label>
+                                </div><!--join us
+                                    --><div class="col-xs-1 valign">
+                                    <button class="btn btn-block btn-success"><span class="glyphicon glyphicon-plus"
+                                                                                    aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row" align="center">
+                                <!--group num-->
+                                <div class="col-xs-1 valign">
+                                    <label>1</label>
+                                </div><!--
+                                    teacher
+                                    --><div class="col-xs-3 valign">
+                                    <label>Александр Лукашенко</label>
+                                </div><!--
+                                    timetable
+                                    --><div class="col-xs-3 valign">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <span class="label label-danger mono_width_text">ПН 19:00-20:00</span>
+                                            <span class="label label-danger mono_width_text">СР 19:00-20:00</span>
+                                        </div>
+                                        <div class="col-xs-6">
+
+                                        </div>
+                                    </div>
+                                </div><!--first lesson
+                                    --><div class="col-xs-3 valign">
+                                    <label>21.10.2016 в 19.30</label>
+                                </div><!--free places
+                                    --><div class="col-xs-1 valign">
+                                    <label>4/20</label>
+                                </div><!--join us
+                                    --><div class="col-xs-1 valign">
+                                    <button class="btn btn-block btn-success"><span class="glyphicon glyphicon-plus"
+                                                                                    aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--Groups list end-->
+
+    </div>
+
+    <!--Footer-->
+
+    <div class="footer">
+        <hr id="footer-border-hr"/>
+        <div class="row">
+        </div>
+        <div class="col-md-3 col-md-offset-2">
+            <h4>Языковая школа "RussoTuristo"</h4>
+
+            <p>Посетите <a href="https://github.com/Taaya/semester_work_2016_11501_BuzukinaKrylovShatin">репозиторий
+                проекта на GitHub</a></p>
+        </div>
+        <div class="col-md-3 col-md-offset-2">
+            <h4>Команда проекта</h4>
+            <ul id="team-list">
+                <li>Бузукина Тая</li>
+                <li>Крылов Антон</li>
+                <li>Шатин Олег</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Scripts-->
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

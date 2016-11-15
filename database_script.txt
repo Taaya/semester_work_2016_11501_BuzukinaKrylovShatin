@@ -1,0 +1,75 @@
+create table courses (
+	id serial primary key,
+	language_code char(2),
+	level int,
+	name varchar(45),
+	description text
+)
+
+create type role as enum ('student', 'teacher', 'admin')
+
+create table users (
+	id serial primary key,
+	username varchar(32),
+	password varchar(64),
+	email varchar(64),
+	user_role role,
+	phone varchar(32)
+)
+
+create table groups(
+	id serial primary key,
+	course_id int references courses("id"),
+	teacher int references users("id"),
+	name varchar(45)
+)
+create table classes(
+	id serial primary key,
+	group_id int references groups("id"),
+	class_date timestamp
+)
+create table class_requests(
+	id serial primary key,
+	class_date timestamp,
+	users_id int references users("id"),
+	group_id int references groups("id"),
+	comment text
+)
+create table group_enrollments(
+	group_id int references groups("id"),
+	user_id int references users("id")
+)
+create table feedback(
+	id serial primary key,
+	feedback_date timestamp,
+	name varchar(64),
+	phone varchar(45),
+	email varchar(64),
+	new boolean,
+	feedback_text text
+)
+
+create table exams(
+	id serial primary key,
+	language_code char(2),
+	name varchar(45)
+	description text
+)
+create table exam_dates(
+	id serial primary key,
+	exam_id int references exams("id"),
+	exam_date timestamp
+)
+create table exam_enrollments(
+	exam_id int references exams("id"),
+	user_id int references users("id")
+)
+create table exam_requests(
+	id serial primary key,
+	exam_date timestamp,
+	user_id int references users("id"),
+	exam_date_id int references exam_dates("id"),
+	comment text
+)
+
+

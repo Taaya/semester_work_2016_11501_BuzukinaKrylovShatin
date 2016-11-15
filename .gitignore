@@ -1,0 +1,17 @@
+*.class
+.idea/semester_work_2016_11501_BuzukinaKrylovShatinGITHUB.iml
+
+.idea/
+out/
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+.png
+.jpg
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+/pages/logo.jpg

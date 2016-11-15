@@ -1,0 +1,50 @@
+insert into users("username", "password", "email", "user_role", "phone") values ('JohnSmith', '123', 'smith247@gmail.com','student', '89172654837');
+insert into users("username", "password", "email", "user_role", "phone") values ('AlexClark', '1234', 'as_cl@gmail.com','student', '89172737610');
+insert into users("username", "password", "email", "user_role", "phone") values ('AndyWalker', '12345', 'andy08@gmail.com','student', '89178692313');
+insert into users("username", "password", "email", "user_role", "phone") values ('JessicaFalkner', '123456', 'hijess@gmail.com','student', '89035607083');
+insert into users("username", "password", "email", "user_role", "phone") values ('RileyHoffman', '1234567', 'riley_hoff@gmail.com','student', '89375901289');
+insert into users("username", "password", "email", "user_role", "phone") values ('admin', 'admin', 'minad@gmail.com','admin', '89172663893');
+insert into users("username", "password", "email", "user_role", "phone") values ('AnnBlack', '1231', 'anna_anna@gmail.com','teacher', '89172717884');
+insert into users("username", "password", "email", "user_role", "phone") values ('TimGordon', '12347', 'timg@gmail.com','teacher', '89172940065');
+
+
+insert into courses("language_code", "level", "name", "description") values ('en', 1, 'Английский для начинающих', 'Отличная возможность начать изучать английский язык! Курс охватывает азы грамматики и лексики, а так же включает в себя основу устной речи и аудирование');
+insert into courses("language_code", "level", "name", "description") values ('en', 3, 'Устный английский', 'Хорошо знаете теорию английского языка, но не можете заговорить? Запишитесь на курс усного английского, который направлен на преодоление языкового барьера и развитие навыка быстрой устной речи');
+insert into courses("language_code", "level", "name", "description") values ('de', 5, 'Немецкий для бизнеса', 'Владение немецким языком дает сильное деловое преимущество для развития бизнеса. Занимайтесь немецким с нами и реализуйте свои самые невероятные бизнес решения');
+insert into courses("language_code", "level", "name", "description") values ('ja', 1, 'Японский для начинающих', 'Какой бы ни был ваш интерес к Японии, будь то японская культура, искусство, музыка, манга, аниме - мы поможем Вам сделать первый шаг в изучении японского языка, тем самым приблизив вас к намеченной цели.');
+insert into courses("language_code", "level", "name", "description") values ('en', 4, 'Английский для продвинутых', 'Данный курс рассчитан на совершенствование навыков у тех, кто уже чувствует себя уверенно в английском языке.');
+insert into courses("language_code", "level", "name", "description") values (‘fr’, 3, 'Говорим по-французски', 'Хотите махнуть в Париж, но не уверены, что сможете узнать у коренных жителей местонахождение Эйфелевой башни? Тогда этот курс для вас! Здесь вы научитесь быстро формулировать мысли и грамотно выражать их на французском языке.');
+insert into courses("language_code", "level", "name", "description") values ('de', 2, 'Немецкий: подготовка к ZMP', 'Курс по подготовке к сдаче международного экзамена в формате ZMP.');
+insert into courses("language_code", "level", "name", "description") values ('ch', 1, 'Китайский: подготовка к HSK', 'Курс по подготовке к сдаче международного экзамена в формате HSK.');
+insert into courses("language_code", "level", "name", "description") values ('en', 1, 'Английский: подготовка к IELTS', 'Курс по подготовке к сдаче международного экзамена в формате IELTS.');
+insert into courses("language_code", "level", "name", "description") values ('ja', 5, 'Японский с носителем', 'Необычный курс от нашего японского гостя Чио Сакамото. Не упустите свой шанс овладеть непревзойденными навыками и знаниями о японском языке и культуре Японии в целом!');
+insert into courses("language_code", "level", "name", "description") values ('fr', 4, 'Французский: подготовка к DELF', 'Курс по подготовке к сдаче международного экзамена в формате DELF.');
+insert into courses("language_code", "level", "name", "description") values ('en', 2, 'Английский: подготовка к TOEFL', 'Курс по подготовке к сдаче международного экзамена в формате TOEFL.');
+insert into courses("language_code", "level", "name", "description") values ('de', 1, 'Немецкий: подготовка к KDS', 'Курс по подготовке к сдаче международного экзамена в формате KDS.');
+insert into courses("language_code", "level", "name", "description") values ('ch', 1, 'Китайский: подготовка к HSK', 'Курс по подготовке к сдаче международного экзамена в формате HSK.');
+insert into courses("language_code", "level", "name", "description") values ('ja', 3, 'Японский: подготовка к JLPT', 'Курс по подготовке к сдаче международного экзамена в формате JLPT.');
+insert into courses("language_code", "level", "name", "description") values ('en', 2, 'Английский: подготовка к PTE', 'Курс по подготовке к сдаче международного экзамена в формате PTE.');
+insert into courses("language_code", "level", "name", "description") values ('de', 5, 'Немецкий: подготовка к ZD', 'Курс по подготовке к сдаче международного экзамена в формате ZD.');
+
+
+insert into groups("course_id", "teacher", "name") values(1, 11, '11');
+insert into groups("course_id", "teacher", "name") values(3, 12, '31');
+
+
+
+insert into classes("group_id", "class_date") values(1, '2016-11-01 15:00:00');
+insert into classes("group_id", "class_date") values(1, '2016-11-03 16:00:00');
+insert into classes("group_id", "class_date") values(1, '2016-11-08 15:00:00');
+
+insert into exams(«language_code», «name», «description») values(‘en’, ‘TOEFL’, ‘Стандартизованный тест на знание английского языка (в его североамериканском варианте), сдача которого обязательна для неанглоязычных иностранцев для поступления в вузы США и Канады, а также Европы и Азии.’);
+insert into exams(«language_code», «name», «description») values(‘en’, ‘IELTS’, ‘IELTS — наиболее востребованный тест английского языка для учёбы и иммиграции в Великобританию, Канаду, Австралию и Новую Зеландию.’);
+insert into exams(«language_code», «name», «description») values(‘en’, ‘PTE’, ‘Pearson Tests (PTE) это система мониторинга знаний по английскому языку, тестирование по Европейскому стандарту с выдачей Сертификата международного образца, который признается во всех вузах, работающих по Общеевропейской Шкале.’);
+insert into exams(«language_code», «name», «description») values(‘de’, ‘ZD’, ‘Международный экзамен по немецкому языку ZD (Zertifikat Deutsch) проводится для уровня ниже среднего и оценивает основные языковые навыки. Этот экзамен признается в Германии в качестве вступительного экзамена в технические колледжи (Fachoberschule) и для получения немецкого гражданства.’);
+insert into exams(«language_code», «name», «description») values(‘de’, ‘ZMP’, ‘ZMP  — Международный экзамен по немецкому языку на  продвинутом уровне. Включает в себя проверку лексики, качественное владение языком, понимание  нюансов речи, и литературных оборотов.’);
+insert into exams(«language_code», «name», «description») values(‘de’, ‘ZOP’, ‘ZOP рассчитан на кандидатов с высоким уровнем владения немецким языком. Наличие сертификата освобождает от сдачи вступительного экзамена по немецкому языку в ВУЗы Германии и говорит о высоком уровне владения языком.’);
+insert into exams(«language_code», «name», «description») values(‘de’, ‘KDS’, ‘KDS подтверждает, что его обладатель понимает содержание сложных немецких текстов, умеет грамотно формулировать свои мысли в устной и письменной форме, хорошо ориентируется в немецкой истории, политике и культуре.’);
+insert into exams(«language_code», «name», «description») values(‘fr’, ‘DELF’, ‘DELF - Diplôme dêtudes en Langue Française - это международный экзамен по французскому языку первой степени. Он ориентирован на тех, кто прослушал курс французского языка продолжительностью 400-500 часов.’);
+insert into exams(«language_code», «name», «description») values(‘fr’, ‘DALF’, ‘DALF подходит для студентов с глубокими знаниями французского языка, умеющих свободно общаться на языке и изучать узкоспециализированные области, используя французский как язык творчества и политических дебатов.’);
+insert into exams(«language_code», «name», «description») values(‘ja’, ‘JLPT’, ‘Сертификат о сдаче экзамена JLPT рассматривается всеми работодателями Японии и многими ВУЗами. При устройстве на работу в Японии первое, что требует подавляющее число компаний — это сертификат о сдаче JLPT первого уровня. ’);
+insert into exams(«language_code», «name», «description») values(‘ch’, ‘HSK’, ‘HSK — стандартизированный экзамен по китайскому языку для лиц, не являющихся носителями китайского языка. Квалификационный экзамен HSK является единой формой аттестации иностранных учащихся.’);
+
