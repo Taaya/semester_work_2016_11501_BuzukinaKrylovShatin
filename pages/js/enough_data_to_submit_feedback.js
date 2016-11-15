@@ -8,7 +8,6 @@ function checkform() {
     if (name.val() === '' || email.val() === '' || text.val() === '') {
         //remove old notification about empty name
         if (name.val() !== '' && name.parent().children().is("#name_empty_warning")){
-            $("#name_empty_warning").remove();
             name.parent().removeClass("has-error");
             
         }
@@ -18,7 +17,6 @@ function checkform() {
         }
         //remove old notification about empty email
         if (email.val() !== '' && email.parent().children().is("#email_empty_warning")){
-            $("#email_empty_warning").remove();
             email.parent().removeClass("has-error");
 
         }
@@ -29,7 +27,6 @@ function checkform() {
         }
         //remove old notification about empty text
         if (text.val() !== '' && text.parent().children().is("#text_empty_warning")){
-            $("#text_empty_warning").remove();
             text.parent().removeClass("has-error");
 
         }
