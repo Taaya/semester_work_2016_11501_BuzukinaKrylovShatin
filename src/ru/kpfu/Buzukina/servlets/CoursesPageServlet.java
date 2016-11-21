@@ -34,14 +34,13 @@ public class CoursesPageServlet extends HttpServlet {
         String page_str = request.getParameter("page");
         HashMap<String, Object> root = new HashMap<>();
         int page_int = 0;
-        if (page_str != null) {
+//        if (page_str != null) {
             page_int = Integer.parseInt(page_str);
             root.put("page", page_int);
-        }
+
         root.put("current_user",request.getSession().getAttribute("current_user"));
         String level = request.getParameter("level_selector");
         List<Course> courses1;
-        System.out.println(level);
         if(level != null) {
             int level_int = Integer.parseInt(level);
             courses1 = courseService.getCoursesByLevel(level_int);

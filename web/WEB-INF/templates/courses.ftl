@@ -56,24 +56,11 @@
                     </div>
                 </div>
                 <form method="get" action="/courses">
-                <div class="col-md-12 margin_minimal">
-                    <a class="btn btn-primary btn-select" id="language_selector">
-                        <input type="hidden" id="system-search" class="btn-select-input" name="" type="text" value="">
 
-                        <span class="btn-select-value">Язык</span>
-                        <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
-                        <ul>
-                            <li data-target="Английский">Английский</li>
-                            <li>Французский</li>
-                            <li>Немецкий</li>
-                            <li>Японский</li>
-                            <li>Китайский</li>
-                        </ul>
-                    </a>
-                </div>
                 <div class="col-md-12 margin_minimal">
-                    <a class="btn btn-primary btn-select" id="level_selector" name="level_selector" href="">
-                        <input type="hidden" class="btn-select-input" id="" name="" value=""/>
+                    <a class="btn btn-primary btn-select" id="level_selector" href="">
+                        <input type="hidden" class="btn-select-input" id="" name="level_selector" value=""/>
+
                         <span class="btn-select-value">Уровень</span>
                         <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
                         <ul>
@@ -84,9 +71,12 @@
                             <li value="5">5</li>
                         </ul>
                     </a>
+                    <input type="hidden" name="page" value="${page}">
                     <button type="submit" class="btn btn-primary btn-block" id="apply_filters">Применить</button>
                 </div>
                 </form>
+
+
             </div>
         </div>
 
