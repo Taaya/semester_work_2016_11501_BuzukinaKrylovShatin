@@ -14,18 +14,18 @@
     <div class="container">
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#about">Главная</a></li>
+                <li><a href="/home">Главная</a></li>
                 <li><a href="/courses?page=1">Курсы</a></li>
                 <li><a href="/exams?page=1">Экзамены</a></li>
                 <li><a href="/login">Личный кабинет</a></li>
-                <li><a href="#contact">Обратная связь</a></li>
+                <li><a href="/feedback">Обратная связь</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right navbar-header">
 
                 <li>
                     <div class="navbar-brand" href="#">Russo turisto</div>
                     <img style="max-width:50px; margin-top: 5px;"
-                         src="logo.png" class="img-responsive"/>
+                         src="images/logo.png" class="img-responsive"/>
                 </li>
             </ul>
         </div><!--/.nav-collapse -->

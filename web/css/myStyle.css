@@ -181,3 +181,9 @@ body {
 .small-row{
     height: 65px;
 }
+.wrong-login{
+    color: #ff0000;
+}
+#apply_filters{
+    margin-top: 15px;
+}

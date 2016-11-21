@@ -14,19 +14,23 @@
     <div class="container">
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#about">Главная</a></li>
+                <li><a href="/home">Главная</a></li>
                 <li><a href="/courses?page=1">Курсы</a></li>
                 <li class="active"><a href="/exams?page=1">Экзамены</a></li>
                 <li><a href="/profile">Личный кабинет</a></li>
-                <li><a href="/logout">Выход</a></li>
-                <li><a href="#contact">Обратная связь</a></li>
+                <#if current_user??>
+                    <li><a href="/logout">Выход</a></li>
+                </#if>
+                <li><a href="/feedback">Обратная связь</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right navbar-header">
-                <li><a href="/login">Войти</a></li>
+                <#if !current_user??>
+                    <li><a href="/login">Войти</a></li>
+                </#if>
                 <li>
                     <div class="navbar-brand" href="#">Russo turisto</div>
                     <img style="max-height:45px; margin-top: 5px;"
-                         src="../../img/logo.png" class="img-responsive"/>
+                         src="images/logo.png" class="img-responsive"/>
                 </li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -103,8 +107,7 @@
                                         <span class="label label-danger mono_width_text">СР 19:00-20:00</span>
                                     </div>
                                     <div class="col-xs-6">
-                                        <span class="label label-danger mono_width_text">ЧТ 19:00-20:00</span>
-                                        <span class="label label-danger mono_width_text">ПТ 19:00-20:00</span>
+
                                         <span class="label label-danger mono_width_text">СБ 08:00-20:00</span>
                                         <span class="label label-danger mono_width_text">ВС 20:00-21:00</span>
                                     </div>
@@ -137,9 +140,7 @@
                                     --><div class="col-xs-3 valign">
                                 <div class="row">
                                     <div class="col-xs-6">
-                                        <span class="label label-danger mono_width_text">ПН 19:00-20:00</span>
                                         <span class="label label-danger mono_width_text">ВТ 19:00-20:00</span>
-                                        <span class="label label-danger mono_width_text">СР 19:00-20:00</span>
                                     </div>
                                     <div class="col-xs-6">
                                         <span class="label label-danger mono_width_text">ЧТ 19:00-20:00</span>

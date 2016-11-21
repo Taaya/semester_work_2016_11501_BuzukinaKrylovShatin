@@ -15,14 +15,14 @@
     <div class="container">
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#about">Главная</a></li>
+                <li><a href="/home">Главная</a></li>
                 <li class="active"><a href="/courses?page=1>">Курсы</a></li>
                 <li><a href="/exams?page=1">Экзамены</a></li>
                 <li><a href="/profile">Личный кабинет</a></li>
                 <#if current_user??>
                     <li><a href="/logout">Выход</a></li>
                 </#if>
-                <li><a href="#contact">Обратная связь</a></li>
+                <li><a href="/feedback">Обратная связь</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right navbar-header">
                 <#if !current_user??>
@@ -31,7 +31,7 @@
                 <li>
                     <div class="navbar-brand" href="#">Russo turisto</div>
                     <img style="max-height:45px; margin-top: 5px;"
-                         src="../../img/logo.png" class="img-responsive"/>
+                         src="images/logo.png" class="img-responsive"/>
                 </li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -48,13 +48,14 @@
             <div class="row">
                 <div id="imaginary_container" class="col-md-12 margin_minimal">
                     <div class="input-group stylish-input-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" placeholder="Search" id="q" oninput="f()">
                     <span class="input-group-addon">
                         <button type="submit"><span class="glyphicon glyphicon-search"></span>
                         </button>
                     </span>
                     </div>
                 </div>
+                <form method="get" action="/courses">
                 <div class="col-md-12 margin_minimal">
                     <a class="btn btn-primary btn-select" id="language_selector">
                         <input type="hidden" id="system-search" class="btn-select-input" name="" type="text" value="">
@@ -71,19 +72,21 @@
                     </a>
                 </div>
                 <div class="col-md-12 margin_minimal">
-                    <a class="btn btn-primary btn-select" id="level_selector">
+                    <a class="btn btn-primary btn-select" id="level_selector" name="level_selector" href="">
                         <input type="hidden" class="btn-select-input" id="" name="" value=""/>
                         <span class="btn-select-value">Уровень</span>
                         <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
                         <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
+                            <li value="1">1</li>
+                            <li value="2">2</li>
+                            <li value="3">3</li>
+                            <li value="4">4</li>
+                            <li value="5">5</li>
                         </ul>
                     </a>
+                    <button type="submit" class="btn btn-primary btn-block" id="apply_filters">Применить</button>
                 </div>
+                </form>
             </div>
         </div>
 
@@ -95,31 +98,36 @@
                             <h1>Курсы</h1>
                         </div>
                     </div>
-                    <div class="row">
-                        <#list courses as course>
-                            <div class="col-md-6">
-                                <div class="panel panel-default">
-                                    <div class="row panel-body">
-                                        <div class="col-xs-12">
-                                            <div class="row">
-                                                <div class="col-xs-12">
+                    <div id="names" class="row title col-md-offset-1">
 
-                                                    <h3 class="title"><a><a href="/course?id=${course.getId()}">${course.getName()}</a></h3>
-                                                    <p>${course.getDescription()}</p>
-                                                    <h4 class="no_margin">
-                                                        <span class="label label-warning">${course.getSimpleLanguage()}</a></span>
-                                                        <span class="label label-warning">Уровень ${course.getLevel()}</span>
-                                                    </h4>
+                    </div>
+                    <div>
+
+                        <div  class="row">
+                            <#list courses as course>
+                                <div class="col-md-6">
+                                    <div class="panel panel-default">
+                                        <div class="row panel-body">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <h3 class="title"><a><a href="/course?id=${course.getId()}">${course.getName()}</a></h3>
+                                                        <p>${course.getDescription()}</p>
+                                                        <h4 class="no_margin">
+                                                            <span class="label label-warning">${course.getSimpleLanguage()}</a></span>
+                                                            <span class="label label-warning">Уровень ${course.getLevel()}</span>
+                                                        </h4>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </#list>
+                            </#list>
+                        </div>
+                    </div>
+                    </div>
 
-                </div>
-            </div>
 
             <div class="row">
                 <div class="col-md-12 container" align="center">
@@ -185,7 +193,7 @@
 <script type="application/javascript">
     var f = function(){
         $.ajax({
-            'url' : '/courses?page=1',
+            'url' : '/searchCoursesServlet',
             'data' : {
                 'q' : $("#q").val()
             },

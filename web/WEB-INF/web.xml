@@ -9,7 +9,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>ru.myproject.Servlets.LoginServlet</servlet-class>
+        <servlet-class>ru.kpfu.Buzukina.servlets.LoginServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -18,7 +18,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>CoursesPageServlet</servlet-name>
-        <servlet-class>ru.myproject.Servlets.CoursesPageServlet</servlet-class>
+        <servlet-class>ru.kpfu.Buzukina.servlets.CoursesPageServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -27,7 +27,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>LogoutServlet</servlet-name>
-        <servlet-class>ru.myproject.Servlets.LogoutServlet</servlet-class>
+        <servlet-class>ru.kpfu.Buzukina.servlets.LogoutServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CourseServlet</servlet-name>
@@ -35,7 +35,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>CourseServlet</servlet-name>
-        <servlet-class>ru.myproject.Servlets.CourseServlet</servlet-class>
+        <servlet-class>ru.kpfu.Buzukina.servlets.CourseServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ExamsPageServlet</servlet-name>
@@ -43,15 +43,15 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ExamsPageServlet</servlet-name>
-        <servlet-class>ru.myproject.Servlets.ExamsPageServlet</servlet-class>
+        <servlet-class>ru.kpfu.Buzukina.servlets.ExamsPageServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>SearchServlet</servlet-name>
+        <servlet-name>CheckLoginServlet</servlet-name>
         <url-pattern>/searchLogin</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>SearchServlet</servlet-name>
-        <servlet-class>ru.myproject.Servlets.SearchServlet</servlet-class>
+        <servlet-name>CheckLoginServlet</servlet-name>
+        <servlet-class>ru.kpfu.Buzukina.servlets.CheckLoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ProfileServlet</servlet-name>
@@ -59,7 +59,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ProfileServlet</servlet-name>
-        <servlet-class>ru.myproject.Servlets.ProfileServlet</servlet-class>
+        <servlet-class>ru.kpfu.Buzukina.servlets.ProfileServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ExamServlet</servlet-name>
@@ -67,21 +67,45 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ExamServlet</servlet-name>
-        <servlet-class>ru.myproject.Servlets.ExamServlet</servlet-class>
+        <servlet-class>ru.kpfu.Buzukina.servlets.ExamServlet</servlet-class>
     </servlet>
-
+    <servlet-mapping>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <url-pattern>/feedback</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <servlet-class>ru.kpfu.Buzukina.servlets.FeedbackServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegistrationServlet</servlet-name>
         <url-pattern>/registration</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>RegistrationServlet</servlet-name>
-        <servlet-class>ru.myproject.Servlets.RegistrationServlet</servlet-class>
+        <servlet-class>ru.kpfu.Buzukina.servlets.RegistrationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MainPageServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MainPageServlet</servlet-name>
+        <servlet-class>ru.kpfu.Buzukina.servlets.MainPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchCoursesServlet</servlet-name>
+        <url-pattern>/searchCoursesServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SearchCoursesServlet</servlet-name>
+        <servlet-class>ru.kpfu.Buzukina.servlets.SearchCoursesServlet</servlet-class>
     </servlet>
 
     <filter>
         <filter-name>ProfileFilter</filter-name>
-        <filter-class>ru.myproject.Filters.ProfileFilter</filter-class>
+        <filter-class>ru.kpfu.Buzukina.filters.ProfileFilter</filter-class>
     </filter>
 
     <filter-mapping>
@@ -95,7 +119,7 @@
 
     <filter>
         <filter-name>LoginFilter</filter-name>
-        <filter-class>ru.myproject.Filters.LoginFilter</filter-class>
+        <filter-class>ru.kpfu.Buzukina.filters.LoginFilter</filter-class>
     </filter>
 
     <filter-mapping>
@@ -133,6 +157,14 @@
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.woff2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.png</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
     </servlet-mapping>
 
 

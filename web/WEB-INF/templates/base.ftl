@@ -76,7 +76,29 @@
         <@page_head/>
     </head>
     <body>
+    <#--<div class="navbar navbar-default navbar-fixed-top" role="navigation">-->
+        <#--<div class="container">-->
+            <#--<div class="navbar-collapse collapse">-->
+                <#--<ul class="nav navbar-nav">-->
+                    <#--<li><a href="/home">Главная</a></li>-->
+                    <#--<li><a href="/courses?page=1">Курсы</a></li>-->
+                    <#--<li><a href="/exams?page=1">Экзамены</a></li>-->
+                    <#--<li><a href="/login">Личный кабинет</a></li>-->
+                    <#--<li><a href="/feedback">Обратная связь</a></li>-->
+                <#--</ul>-->
+                <#--<ul class="nav navbar-nav navbar-right navbar-header">-->
 
+                    <#--<li>-->
+                        <#--<div class="navbar-brand" href="#">Russo turisto</div>-->
+                        <#--<img style="max-width:50px; margin-top: 5px;"-->
+                             <#--src="images/logo.png" class="img-responsive"/>-->
+                    <#--</li>-->
+                <#--</ul>-->
+            <#--</div><!--/.nav-collapse &ndash;&gt;-->
+
+
+        <#--</div>-->
+    <#--</div>-->
         <@page_body/>
 
     </body>
