@@ -1,15 +1,9 @@
 <#ftl encoding="utf-8"/>
 <#include "base.ftl">
 
-<#macro page_head>
-<meta charset="UTF-8">
-<meta charset="UTF-8">
-<title>${exam.getName()}</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-<link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
-</#macro>
+<#macro title>${exam.getName()}</#macro>
 
-<#macro page_body>
+<#macro content>
 <div class="navbar navbar-default navbar-fixed-top  navbar-inverse" role="navigation">
     <div class="container">
         <div class="navbar-collapse collapse">
@@ -30,7 +24,7 @@
                 <li>
                     <div class="navbar-brand" href="#">Russo turisto</div>
                     <img style="max-height:45px; margin-top: 5px;"
-                         src="images/logo.png" class="img-responsive"/>
+                         src="images/logo_recht.jpg" class="img-responsive"/>
                 </li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -240,25 +234,7 @@
         <!--Groups list end-->
 
     </div>
-    <div class="footer">
-        <hr id="footer-border-hr"/>
-        <div class="row">
-        </div>
-        <div class="col-md-3 col-md-offset-2">
-            <h4>Языковая школа "RussoTuristo"</h4>
 
-            <p>Посетите <a href="https://github.com/Taaya/semester_work_2016_11501_BuzukinaKrylovShatin">репозиторий
-                проекта на GitHub</a></p>
-        </div>
-        <div class="col-md-3 col-md-offset-2">
-            <h4>Команда проекта</h4>
-            <ul id="team-list">
-                <li>Бузукина Тая</li>
-                <li>Крылов Антон</li>
-                <li>Шатин Олег</li>
-            </ul>
-        </div>
-    </div>
 
 </div>
 
@@ -266,5 +242,3 @@
 <script src="js/jquery-3.1.1.js"></script>
 <script src="js/bootstrap.js"></script>
 </#macro>
-
-<@display_page/>

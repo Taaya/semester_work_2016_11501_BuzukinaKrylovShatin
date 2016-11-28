@@ -1,45 +1,9 @@
 <#ftl encoding="utf-8"/>
 <#include "base.ftl">
 
-<#macro page_head>
-    <meta charset="UTF-8">
-    <title>Регистрация</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-    <link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
-</#macro>
-<#macro page_body>
-<#--<div class="navbar navbar-default navbar-fixed-top" role="navigation">-->
-    <#--<div class="container">-->
-        <#--<div class="navbar-collapse collapse">-->
-            <#--<ul class="nav navbar-nav">-->
-                <#--<li class="active"><a href="#about">Главная</a></li>-->
-                <#--<li><a href="/courses?page=1">Курсы</a></li>-->
-                <#--<li><a href="/exams?page=1">Экзамены</a></li>-->
-                <#--<li><a href="/login">Личный кабинет</a></li>-->
-                <#--<li><a href="/feedback">Обратная связь</a></li>-->
-            <#--</ul>-->
-            <#--<ul class="nav navbar-nav navbar-right navbar-header">-->
+<#macro title>Регистрация</#macro>
+<#macro content>
 
-                <#--<li>-->
-                    <#--<div class="navbar-brand" href="#">Russo turisto</div>-->
-                    <#--<img style="max-width:50px; margin-top: 5px;"-->
-                         <#--src="logo.png" class="img-responsive"/>-->
-                <#--</li>-->
-            <#--</ul>-->
-        <#--</div><!--/.nav-collapse &ndash;&gt;-->
-
-
-    <#--</div>-->
-<#--</div>-->
-
-<#--<form method=POST action=/registration id="form">-->
-    <#--<input type=text id="username" oninput="checkLogin()" name=username>-->
-    <#--<input type=password name=password>-->
-    <#--<input type="email" name=email>-->
-    <#--<p id="errorLogin" class="errorMessage"></p>-->
-    <#--<input type="phone" name=phone>-->
-    <#--<input type=submit value=Зарегистрироваться id="submit">-->
-<#--</form>-->
 <div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
     <div class="container">
         <div class="navbar-collapse collapse">
@@ -55,7 +19,7 @@
                 <li>
                     <div class="navbar-brand" href="#">Russo turisto</div>
                     <img style="max-height:45px; margin-top: 5px;"
-                         src="images/logo.png" class="img-responsive">
+                         src="images/logo_recht.jpg" class="img-responsive">
 
                 </li>
             </ul>
@@ -133,25 +97,6 @@
 
     <!--Footer-->
 
-    <div class="footer">
-        <hr id="footer-border-hr"/>
-        <div class="row">
-        </div>
-        <div class="col-md-3 col-md-offset-2">
-            <h4>Языковая школа "RussoTuristo"</h4>
-
-            <p>Посетите <a href="https://github.com/Taaya/semester_work_2016_11501_BuzukinaKrylovShatin">репозиторий
-                проекта на GitHub</a></p>
-        </div>
-        <div class="col-md-3 col-md-offset-2">
-            <h4>Команда проекта</h4>
-            <ul id="team-list">
-                <li>Бузукина Тая</li>
-                <li>Крылов Антон</li>
-                <li>Шатин Олег</li>
-            </ul>
-        </div>
-    </div>
 </div>
 
 
@@ -197,11 +142,3 @@
     });
 </script>
 </#macro>
-<@display_page/>
-
-
-<body>
-<!-- Fixed navbar -->
-
-</body>
-</html>

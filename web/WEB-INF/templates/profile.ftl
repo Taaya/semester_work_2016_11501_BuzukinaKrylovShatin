@@ -1,6 +1,7 @@
 <#ftl encoding="utf-8"/>
 <#include "base.ftl">
-<#macro page_body>
+<#macro title>Профиль</#macro>
+<#macro content>
 <!-- Fixed navbar -->
 <div class="navbar navbar-default navbar-fixed-top  navbar-inverse" role="navigation">
     <div class="container">
@@ -17,7 +18,7 @@
                 <li>
                     <div class="navbar-brand" href="#">Russo turisto</div>
                     <img style="max-height:45px; margin-top: 5px;"
-                         src="images/logo.png" class="img-responsive"/>
+                         src="images/logo_recht.jpg" class="img-responsive"/>
                 </li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -48,7 +49,7 @@
                                 <label for="input_login" class="control-label">Логин</label>
                             </div>
                             <div class="col-xs-6">
-                                <input type="text" class="form-control" id="input_login" placeholder="vasya_superkrut">
+                                <input type="text" class="form-control" id="input_login" placeholder="${user.getUsername()}" name="newLogin">
                             </div>
                         </div>
                     </div>
@@ -58,7 +59,7 @@
                                 <label for="input_login" class="control-label">Email</label>
                             </div>
                             <div class="col-xs-6">
-                                <input type="text" class="form-control" id="input_email" placeholder="vasya@mail.ru">
+                                <input type="text" class="form-control" id="input_email" placeholder="${user.getEmail()}" name="newEmail">
                             </div>
                         </div>
                     </div>
@@ -260,25 +261,7 @@
 
     <!--Footer-->
 
-    <div class="footer">
-        <hr id="footer-border-hr"/>
-        <div class="row">
-        </div>
-        <div class="col-md-3 col-md-offset-2">
-            <h4>Языковая школа "RussoTuristo"</h4>
 
-            <p>Посетите <a href="https://github.com/Taaya/semester_work_2016_11501_BuzukinaKrylovShatin">репозиторий
-                проекта на GitHub</a></p>
-        </div>
-        <div class="col-md-3 col-md-offset-2">
-            <h4>Команда проекта</h4>
-            <ul id="team-list">
-                <li>Бузукина Тая</li>
-                <li>Крылов Антон</li>
-                <li>Шатин Олег</li>
-            </ul>
-        </div>
-    </div>
 </div>
 
 <!--Scripts-->
@@ -286,13 +269,3 @@
 <script src="js/bootstrap.js"></script>
 </#macro>
 
-<#macro page_head>
-    <meta charset="UTF-8">
-    <title>Личный кабинет</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-    <link href="css/myStyle.css" rel="stylesheet" type="text/css"/>
-</#macro>
-    <!--/.nav-collapse -->
-
-
-<@display_page/>
