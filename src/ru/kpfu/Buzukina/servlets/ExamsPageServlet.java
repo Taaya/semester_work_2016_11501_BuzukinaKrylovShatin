@@ -38,9 +38,6 @@ public class ExamsPageServlet extends HttpServlet {
         root.put("current_user",request.getSession().getAttribute("current_user"));
         root.put("page", page_int);
 
-//        RequestDispatcher rd = request.getRequestDispatcher("/courses.jsp");
-//        rd.forward(request, response);
-
         TemplateSingleton ts = new TemplateSingleton("exams.ftl");
         ts.render(request,response,root);
 

@@ -20,4 +20,6 @@ public interface UserDAO {
     List<Course> getUsersCourses(User user);
 
     List<Exam> getUsersExams(User user);
+
+    boolean editUserInfo(String oldLogin, String newLogin, String newEmail);
 }

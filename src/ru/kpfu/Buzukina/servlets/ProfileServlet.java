@@ -30,6 +30,13 @@ public class ProfileServlet extends HttpServlet {
     private ExamDAO examDAO = new ExamDAOImpl();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setCharacterEncoding("UTF-8");
+        String newLogin = request.getParameter("newLogin");
+        String newEmail = request.getParameter("newEmail");
+        profileService.editProfile((String)request.getSession().getAttribute("username"), newLogin, newEmail);
+        response.sendRedirect("/profile");
+
 
     }
 

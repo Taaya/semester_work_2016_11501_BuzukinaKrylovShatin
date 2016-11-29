@@ -13,11 +13,11 @@ public interface GroupDAO {
 
     String getTeacherName(Group group);
 
-    Group getGroupFromId(int id);
-
     List<String> getTime(Group group);
 
     String getFirstClass(Group group);
 
     int placesLeft(Group group);
+
+    Group getGroupFromId(int id);
 }

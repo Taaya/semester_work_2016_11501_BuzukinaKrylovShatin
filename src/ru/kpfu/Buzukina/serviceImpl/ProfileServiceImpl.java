@@ -10,4 +10,8 @@ import ru.kpfu.Buzukina.dao.UserDAO;
 public class ProfileServiceImpl implements ProfileService {
     private UserDAO userDAO = new UserDAOImpl();
 
+    @Override
+    public boolean editProfile(String oldLogin, String newLogin, String newEmail) {
+        return userDAO.editUserInfo(oldLogin, newLogin, newEmail);
+    }
 }

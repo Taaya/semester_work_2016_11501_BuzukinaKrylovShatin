@@ -38,23 +38,5 @@ public class LoginServiceImpl implements LoginService {
 
     }
 
-    public String[] familiarUser(HttpServletResponse response, HttpServletRequest request, Cookie[] cookies, String username, String password){
-        String[] data = {"", ""};
-        if (request.getSession().getAttribute("current_user") == null){
-            if (cookies != null){
-                for (Cookie c : cookies){
-                    if (c.getName().equals("username")){
-                        UserDAO userDAO = new UserDAOImpl();
-                        password = userDAO.getPassword(username);
-                        data[0] = username;
-                        data[1] = password;
-                        break;
-                    }
-                }
-            }
-        }
-
-        return new String[0];
-    }
 
 }

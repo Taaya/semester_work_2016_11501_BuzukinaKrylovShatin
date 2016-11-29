@@ -47,7 +47,7 @@ public class SearchCoursesServlet extends HttpServlet {
                 JSONObject jo = new JSONObject();
                 jo.put("result", ja);
                 response.setContentType("text/json");
-                //response.getWriter().println(names);
+
                 response.getWriter().println(jo.toString());
             } catch (SQLException e) {
                 e.printStackTrace();

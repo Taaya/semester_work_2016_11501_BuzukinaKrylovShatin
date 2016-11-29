@@ -34,9 +34,8 @@ public class CoursesPageServlet extends HttpServlet {
         String page_str = request.getParameter("page");
         HashMap<String, Object> root = new HashMap<>();
         int page_int = 0;
-//        if (page_str != null) {
-            page_int = Integer.parseInt(page_str);
-            root.put("page", page_int);
+        page_int = Integer.parseInt(page_str);
+        root.put("page", page_int);
 
         root.put("current_user",request.getSession().getAttribute("current_user"));
         String level = request.getParameter("level_selector");

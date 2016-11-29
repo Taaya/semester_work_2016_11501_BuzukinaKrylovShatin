@@ -135,5 +135,19 @@ public class UserDAOImpl implements UserDAO {
         }
     }
 
+    @Override
+    public boolean editUserInfo(String oldLogin, String newLogin, String newEmail) {
+        try {
+            conn = ConnectionSingleton.getConnection();
+            Statement st = conn.createStatement();
+            int rs = st.executeUpdate("update users set \"username\"='" + newLogin +
+                    "', \"email\"='" + newEmail + "' where \"username\"='" + oldLogin + "'");
+            return rs == 1;
+        }catch (SQLException e){
+            e.printStackTrace();
+            return  false;
+        }
+    }
+
 
 }
